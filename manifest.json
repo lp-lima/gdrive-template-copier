@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Drive Template Copier",
+  "version": "1.0",
+  "description": "Copies a template folder into the currently open Google Drive folder.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://script.google.com/*",
+    "https://script.googleusercontent.com/*"
+  ]
+}

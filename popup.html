@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 250px;
+      padding: 15px;
+      text-align: center;
+      margin: 0;
+    }
+    h3 {
+      margin-top: 0;
+      color: #333;
+    }
+    button {
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      margin-top: 15px;
+      width: 100%;
+    }
+    button:hover {
+      background-color: #1557b0;
+    }
+    button:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+    #status {
+      margin-top: 15px;
+      font-size: 13px;
+      color: #555;
+      word-wrap: break-word;
+      min-height: 20px;
+    }
+    .error { color: #d93025 !important; font-weight: bold; }
+    .success { color: #188038 !important; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h3>Template Copier</h3>
+  <div id="status">Checking current folder...</div>
+  <button id="copyBtn" disabled>Copy Template Here</button>
+  <script src="popup.js"></script>
+</body>
+</html>
