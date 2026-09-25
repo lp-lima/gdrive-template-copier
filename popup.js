@@ -1,4 +1,4 @@
-const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxsZ8R0NzGE8HpruKksIhznvST612VIT7KB3eYx_WOvhanztgDsSUvezoY5aaEDA8BwgQ/exec";
+const WEB_APP_URL = "https://script.google.com/macros/s/AKfycby05q-haE5wDo-NVnZrq2LFFotu3t4VcN82NKUbzJAJ8gXhZmc2vute8FZvKNhbAWPTtQ/exec";
 const TOKEN = "basic-authentication_token";
 
 document.addEventListener('DOMContentLoaded', () => {
