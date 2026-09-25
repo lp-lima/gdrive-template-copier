@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
   chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
     const url = tabs[0].url;
     
-    // Check if the current URL is a Google Drive folder
-    const match = url.match(/drive\.google\.com\/drive\/folders\/([a-zA-Z0-9-_]+)/);
+    // Check if the current URL is a Google Drive folder (handles /drive/folders/ and /drive/u/0/folders/)
+    const match = url.match(/\/folders\/([a-zA-Z0-9-_]+)/);
     
     if (match && match[1]) {
       currentFolderId = match[1];
